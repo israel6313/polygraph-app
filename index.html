@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת סריקה ביומטרית</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon.png"> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+
+    <div id="trigger-truth" class="secret-zone"></div>
+    <div id="trigger-lie" class="secret-zone"></div>
+
+    <div class="container">
+        <h1>סריקת אמת ביומטרית</h1>
+        <div class="scanner-box">
+            <div id="scan-line" class="scan-line"></div>
+            <div id="fingerprint" class="fingerprint">
+                <svg viewBox="0 0 100 100" width="100" height="100">
+                    <path d="M50 10 C30 10 10 30 10 50 C10 70 30 90 50 90 C70 90 90 70 90 50" fill="none" stroke="#0f0" stroke-width="2"/>
+                    <path d="M50 20 C35 20 20 35 20 50 C20 65 35 80 50 80" fill="none" stroke="#0f0" stroke-width="2"/>
+                    <path d="M50 30 C40 30 30 40 30 50 C30 60 40 70 50 70" fill="none" stroke="#0f0" stroke-width="2"/>
+                    <path d="M50 40 C45 40 40 45 40 50" fill="none" stroke="#0f0" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+        
+        <p id="status-text">הנח אצבע לסריקה...</p>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
